@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration for Technical Programs</title>
+</head>
+<body>
+    <h1>Online Registration for Technical Programs</h1>
+    <form action="Online_course.php" method="POST">
+        <label for="participant_name">Participant Name:</label>
+        <input type="text" id="participant_name" name="participant_name" required><br><br>
+
+        <label for="college_name">College Name:</label>
+        <input type="text" id="college_name" name="college_name" required><br><br>
+
+        <label for="branch">Branch:</label>
+        <select id="branch" name="branch" required>
+            <option value="">Select</option>
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+            <option value="CE">Civil Engineering</option>
+        </select><br><br>
+
+        <label for="programme">Programme:</label><br>
+        <input type="checkbox" id="programme1" name="programme[]" value="C#">
+        <label for="programme1">C#</label><br>
+
+        <input type="checkbox" id="programme2" name="programme[]" value="C++">
+        <label for="programme2">C++</label><br>
+
+        <input type="checkbox" id="programme3" name="programme[]" value="C">
+        <label for="programme3">C</label><br>
+
+        <input type="checkbox" id="programme4" name="programme[]" value="Java">
+        <label for="programme4">Java</label><br><br>
+
+        <label for="num_days">Number of Days:</label>
+        <select id="num_days" name="num_days" required>
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="typeofmember">Type of Member:</label>
+        <input type="radio" id="internal" name="typeofmember" value="Internal" required>
+        <label for="internal">Internal</label>
+        <input type="radio" id="external" name="typeofmember" value="External" required>
+        <label for="external">External</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

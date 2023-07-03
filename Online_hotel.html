@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Hotel Management</title>
+</head>
+<body>
+    <h1>Online Hotel Management</h1>
+    <form action="Online_hotel.php" method="POST">
+        <label for="id_no">ID Number:</label>
+        <input type="text" id="id_no" name="id_no" required><br><br>
+
+        <label for="cname">Customer Name:</label>
+        <input type="text" id="cname" name="cname" required><br><br>
+
+        <label for="add1">Address Line 1:</label>
+        <input type="text" id="add1" name="add1" required><br><br>
+
+        <label for="add2">Address Line 2:</label>
+        <input type="text" id="add2" name="add2" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" required><br><br>
+
+        <label for="emailid">Email ID:</label>
+        <input type="email" id="emailid" name="emailid" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="sex">Sex:</label>
+        <input type="radio" id="male" name="sex" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="sex" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype" required>
+            <option value="">Select</option>
+            <option value="Super Deluxe">Super Deluxe</option>
+            <option value="Deluxe">Deluxe</option>
+            <option value="Double">Double</option>
+            <option value="Single">Single</option>
+        </select><br><br>
+
+        <label for="no_of_stay">Number of Days Stay:</label>
+        <select id="no_of_stay" name="no_of_stay" required>
+            <option value="">Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+
+        <label for="typeofpackage">Type of Package:</label>
+        <input type="radio" id="summer" name="typeofpackage" value="Summer" required>
+        <label for="summer">Summer Package</label>
+        <input type="radio" id="nonsummer" name="typeofpackage" value="Non-Summer" required>
+        <label for="nonsummer">Non-Summer Package</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
